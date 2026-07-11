@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetShop Amigo Fiel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <span class="logo">Amigo Fiel</span>
+    <div class="links">
+      <a href="index.html">Início</a>
+      <a href="clientes.html">Clientes</a>
+      <a href="produtos.html">Loja</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="sobre">
+      <h1>PetShop Amigo Fiel</h1>
+      <p>Cuidando do seu pet com carinho desde 2015. Banho, tosa, consultas e os melhores produtos para o seu animal.</p>
+    </section>
+
+    <section class="form-section">
+      <h2>Cadastro de Cliente</h2>
+      <form id="formCadastro">
+        <h3>Tutor</h3>
+        <label>Nome</label>
+        <input type="text" id="tutorNome" required>
+
+        <label>Telefone</label>
+        <input type="text" id="tutorTelefone" required>
+
+        <label>Endereço</label>
+        <input type="text" id="tutorEndereco" required>
+
+        <label>Data do atendimento</label>
+        <input type="date" id="dataAtendimento" required>
+
+        <h3>Animal</h3>
+        <label>Nome</label>
+        <input type="text" id="animalNome" required>
+
+        <label>Idade</label>
+        <input type="text" id="animalIdade" required>
+
+        <label>Porte</label>
+        <select id="animalPorte">
+          <option value="Pequeno">Pequeno</option>
+          <option value="Médio">Médio</option>
+          <option value="Grande">Grande</option>
+        </select>
+
+        <button type="submit">Cadastrar</button>
+      </form>
+      <p id="msgCadastro"></p>
+    </section>
+  </main>
+
+  <script src="cadastro.js"></script>
+</body>
+</html>

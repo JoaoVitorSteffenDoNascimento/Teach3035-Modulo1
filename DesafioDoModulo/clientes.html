@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clientes - PetShop Amigo Fiel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <span class="logo">Amigo Fiel</span>
+    <div class="links">
+      <a href="index.html">Início</a>
+      <a href="clientes.html">Clientes</a>
+      <a href="produtos.html">Loja</a>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Clientes cadastrados</h1>
+    <div id="listaClientes" class="cards"></div>
+    <p id="msgVazio"></p>
+  </main>
+
+  <div id="modal" class="modal escondido">
+    <div class="modal-conteudo">
+      <span id="fecharModal" class="fechar">&times;</span>
+      <h2>Detalhes</h2>
+      <p><strong>Tutor:</strong> <span id="mTutorNome"></span></p>
+      <p><strong>Telefone:</strong> <span id="mTutorTelefone"></span></p>
+      <p><strong>Endereço:</strong> <span id="mTutorEndereco"></span></p>
+      <p><strong>Data do atendimento:</strong> <span id="mData"></span></p>
+      <p><strong>Idade do animal:</strong> <span id="mAnimalIdade"></span></p>
+      <p><strong>Porte:</strong> <span id="mAnimalPorte"></span></p>
+    </div>
+  </div>
+
+  <script src="clientes.js"></script>
+</body>
+</html>
